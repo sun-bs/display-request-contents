@@ -1,0 +1,13 @@
+services:
+  web1:
+    build: .
+    environment:
+      - ENV=web1
+    ports:
+      - 50080:80
+  web2:
+    build: .
+    environment:
+      - ENV=web2
+    ports:
+      - 60080:80
